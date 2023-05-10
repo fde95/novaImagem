@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Inicio Ajustes Header*/
+html{
+    overflow-x:hidden;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff ;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.20);
+}
+
+header img{
+    width: 300px;
+}
+
+header li{
+    list-style: none;
+    display: inline;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+header li a{
+    text-decoration: none;
+    color: #00458e;
+    padding: 8px;
+    margin: 10px;
+}
+
+header li a:hover{
+    color: #025dbe;
+    border-bottom: 3px solid #025dbe;
+}
+
+.selectioned{
+    color: #025dbe;
+    border-bottom: 3px solid #025dbe;
+}
+
+.alert{
+    color: #025dbe;
+    text-align: center;
+    font-size: 8em;
+    margin: 340px 0;
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    font-size: .9em;
+    background-color:#052a52;
+    color: #fff;
+}
+
+
+
+
+
+/*Inicio Dimensionamento em Celular*/
+@media screen and (max-width: 767px){
+    .carousel-imagem{
+        overflow-x:hidden;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    
+    html{
+        overflow-x:hidden;
+    }
+
+    
+    header{
+        display:block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    header img{
+        width: 200px;
+        margin: 10px 0;
+    }
+    
+    header li{
+        font-size: .6em;
+    }
+    
+    header li a{
+        text-decoration: none;
+        color: #00458e;
+        padding: 8px;
+        margin: 10px;
+    }
+    .alert{
+        display: block;
+        margin: 240px 0;
+        font-size: 2em;
+    }
+    
+
+    footer{
+        font-size: .6em;
+    }
+
+}
+/*Fim Dimensionamento em Celular*/
+
+
+/*Inicio Dimensionamento em Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+    .carousel-imagem{
+        overflow-x:hidden;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    
+    html{
+        overflow-x:hidden;
+    }
+    
+
+    header img{
+        width: 250px;
+    }
+    
+    .banner img{
+        width: 100%;
+    }
+
+    header li{
+        font-size: .9em;
+    }
+    
+    header li a{
+        text-decoration: none;
+        color: #00458e;
+        padding: 0px;
+        margin: 10px;
+    }
+
+    .alert{
+        display: block;
+        margin: 340px 0;
+        font-size: 6em;
+    }
+    
+
+    footer{
+        font-size: .6em;
+    }
+
+}
+
+/*Fim Dimensionamento em Tablet*/

@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Inicio Ajustes Header*/
+html{
+    overflow-x:hidden;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff ;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.20);
+}
+
+header img{
+    width: 300px;
+}
+
+header li{
+    list-style: none;
+    display: inline;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+header li a{
+    text-decoration: none;
+    color: #00458e;
+    padding: 8px;
+    margin: 10px;
+}
+
+header li a:hover{
+    color: #025dbe;
+    border-bottom: 3px solid #025dbe;
+}
+
+.selectioned{
+    color: #025dbe;
+    border-bottom: 3px solid #025dbe;
+}
+
+.banner img{
+    width: 100%;
+}
+
+#home{
+    margin-top: 50px;
+    color: #00346b;
+}
+
+#home h2{
+    color: #00346b;
+    font-weight: 300;
+    font-size: 2.3em;
+    line-height: 35px;
+}
+
+#home p{
+    margin-top: 10px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+#home ul{
+    text-align: start;
+    justify-items: center;
+}
+
+#home li:hover{
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.15);
+}
+
+#home li{
+    border-radius: 10px;
+    list-style: none;
+    margin: 30px;
+    padding: 10px;
+}
+
+#home li a{
+    text-decoration: none;
+    color: #00346b;
+}
+
+
+#home li img{
+    width: 30px;
+    margin: 0 1px -8px 0;
+}
+
+.introductions{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    column-gap: 8%;
+}
+
+.intro img{
+    width: 130%;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 30px;
+    image-resolution: 100px;
+}
+
+.backgrounForm{
+    background-color: #00346b;
+    color: #fff;
+    padding: 20px;
+    margin-top: -35px;
+}
+
+.contatos-finais{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 10%;
+}
+
+form h2{
+    margin-bottom: 30px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+form button{
+    cursor: pointer;
+    font-weight: 680;
+}
+
+form button:hover{
+    background-color: aliceblue;
+}
+
+.mapa{
+    margin-top: 130px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    font-size: .9em;
+    background-color:#052a52;
+    color: #fff;
+}
+
+
+
+
+
+/*Inicio Dimensionamento em Celular*/
+@media screen and (max-width: 767px){
+    .carousel-imagem{
+        overflow-x:hidden;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    
+    html{
+        overflow-x:hidden;
+    }
+
+    
+    header{
+        display:block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    header img{
+        width: 200px;
+        margin: 10px 0;
+    }
+    
+    header li{
+        font-size: .6em;
+    }
+    
+    header li a{
+        text-decoration: none;
+        color: #00458e;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    #home{
+        margin-top: 50px;
+        color: #00346b;
+        margin-bottom: 80px;
+    }
+    
+    #home h2{
+        color: #00346b;
+        font-weight: 300;
+        font-size: 2.3em;
+        line-height: 35px;
+    }
+    
+    #home p{
+        margin-top: 10px;
+        font-size: 1.1em;
+        text-align: justify;
+    }
+    
+    #home ul{
+        margin-top: 50px;
+        text-align: start;
+        justify-items: center;
+    }
+    
+    #home li:hover{
+        box-shadow: 10px 10px 10px rgb(0, 0, 0,0.15);
+    }
+    
+    #home li{
+        border-radius: 10px;
+        list-style: none;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    #home li a{
+        text-decoration: none;
+        color: #00346b;
+    }
+    
+    #home li img{
+        display: none;
+    }
+
+    .woman{
+        display: none;
+    }
+
+    .introductions{
+        display: block;
+    }
+
+    .contatos-finais{
+        display: block;
+    }
+    
+    form h2{
+        margin-bottom: 30px;
+    }
+    
+    form{
+        margin-top: 50px;
+    }
+    
+    form input,
+    form textarea,
+    form button{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        resize: none;
+    }
+    
+    form button{
+        cursor: pointer;
+        font-weight: 680;
+    }
+    
+    form button:hover{
+        background-color: aliceblue;
+    }
+
+    .mapa{
+        display: none;
+    }
+
+    footer{
+        font-size: .6em;
+    }
+
+}
+/*Fim Dimensionamento em Celular*/
+
+
+/*Inicio Dimensionamento em Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+    .carousel-imagem{
+        overflow-x:hidden;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    
+    html{
+        overflow-x:hidden;
+    }
+    
+
+    header img{
+        width: 250px;
+    }
+    
+    .banner img{
+        width: 100%;
+    }
+
+    header li{
+        font-size: .9em;
+    }
+    
+    header li a{
+        text-decoration: none;
+        color: #00458e;
+        padding: 0px;
+        margin: 10px;
+    }
+
+
+    .banner img{
+        width: 100%;
+    }
+
+    #home{
+        margin-top: 50px;
+        color: #00346b;
+        margin-bottom: 80px;
+    }
+    
+    #home h2{
+        color: #00346b;
+        font-weight: 300;
+        font-size: 2.3em;
+        line-height: 35px;
+    }
+    
+    #home p{
+        margin-top: 10px;
+        font-size: 1.1em;
+        text-align: justify;
+    }
+    
+    #home ul{
+        margin-top: 50px;
+        text-align: start;
+        justify-items: center;
+    }
+    
+    #home li:hover{
+        box-shadow: 10px 10px 10px rgb(0, 0, 0,0.15);
+    }
+    
+    #home li{
+        border-radius: 10px;
+        list-style: none;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    #home li a{
+        text-decoration: none;
+        color: #00346b;
+    }
+    
+    #home li img{
+        display: none;
+    }
+
+    .woman{
+        display: none;
+    }
+
+    .introductions{
+        display: block;
+    }
+
+    .contatos-finais{
+        display: block;
+    }
+    
+    form h2{
+        margin-bottom: 30px;
+    }
+    
+    form{
+        margin-top: 50px;
+    }
+    
+    form input,
+    form textarea,
+    form button{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        resize: none;
+    }
+    
+    form button{
+        cursor: pointer;
+        font-weight: 680;
+    }
+    
+    form button:hover{
+        background-color: aliceblue;
+    }
+
+    .mapa{
+        display: none;
+    }
+
+    footer{
+        font-size: .6em;
+    }
+
+}
+
+/*Fim Dimensionamento em Tablet*/
