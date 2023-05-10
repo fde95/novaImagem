@@ -1,6 +1,6 @@
-# <h1 align="center">
-  <p align="center"><a href="https://urban-co.vercel.app/">Nova Imagem</a></p>
- <img src="https://media.giphy.com/media/a07x8z7ObpOGA/giphy.gif" alt="Cachorro andando de skate">
+<h1 align="center">
+  <p align="center"><a href="https://no-oficial-nova-imagem.vercel.app/">Nova Imagem</a></p>
+ <img src="https://media.giphy.com/media/a07x8z7ObpOGA/giphy.gif" alt="Bebe dançando em imagem de ultrassom">
 </h1>
 <div style="display: inline_block"><br>
   <div align="center">
