@@ -155,6 +155,11 @@ form button{
     resize: none;
 }
 
+form textarea{
+    width: 100%;
+    height: 200px;
+}
+
 form button{
     cursor: pointer;
     font-weight: 680;
